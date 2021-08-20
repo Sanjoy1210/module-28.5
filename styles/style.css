@@ -1,0 +1,243 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* utilities or common style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main, .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+/* Header Section Style */
+/* Logo style */
+.header {
+    background-color: #562EFF;
+    padding: 20px 0;    
+}
+.navbar-container {
+    display: flex;
+    width: 870px;
+    justify-content: space-between;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 16px;
+}
+.logo-container .logo img {
+    width: 40px;
+    height: 50px;
+}
+.logo-container h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+.menubar, .menu-item ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu-item ul li:not(:last-child) {
+    margin-right: 36px;
+}
+
+.menu-item li a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+/* top players style */
+.top-players {
+    margin-bottom: 30px;
+}
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player {
+    display: flex;
+    align-items: center;
+}
+.player img {
+    width: 56px;
+    height: 56px;
+}
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* top blogs styles */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog {
+    display: flex;
+}
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+.blog-info {
+    margin-left: 16px;
+}
+.blog-title {
+    font-size: 20px;
+}
+.blog-author {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* Courses style */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course {
+    width: 253px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+.course-banner {
+    text-align: center;
+}
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+    text-align: center;
+}
+/* .course-detail {
+    padding-left: 12px;
+} */
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-bottom: 20px; */
+}
+.course-info span {
+    margin-left: 6px;
+}
+.fa-star {
+    font-size: 12px;
+}
+.fa-star.filled {
+    color: #FFC014;
+}
+.fa-star.empty {
+    color: #AEAEAE;
+}
+.course-duration {
+    width: 87px;
+    display: flex;
+    align-items: center;
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    font-size: 14px;
+    border: 1px solid #FF4A60;
+    border-radius: 50px;
+    padding: 4px 8px;
+}
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    .navbar-container {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .players, .blogs, .courses, .menubar {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog {
+        flex-direction: column;
+    }
+    
+}
+
+/* Table devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    
+    .container {
+        width: 100%;
+    }
+    .players, .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* list item section */
+
+.list-items {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.click-btn, .increment-btn {
+    background-color: #562EFF;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* input field section */
+.input-field {
+    outline: none;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #562EFF;
+    border-radius: 6px;
+    color: rgb(70, 70, 70);
+}
